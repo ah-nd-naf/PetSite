@@ -9,20 +9,38 @@
 </head>
 <body class="bg-gradient-to-b from-yellow-50 to-white text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 text-white p-8 flex justify-between items-center shadow-lg">
-    <h1 class="text-3xl font-extrabold tracking-wide">🐾 MumMum</h1>
-    <ul class="flex space-x-6 font-semibold">
-      <li><a href="#home" class="hover:text-yellow-200">Home</a></li>
-      <li><a href="#gallery" class="hover:text-yellow-200">Gallery</a></li>
-      <li><a href="#contact" class="hover:text-yellow-200">Contact</a></li>
-      <li><a href="#blog" class="hover:text-yellow-200">Blog</a></li>
-      <li><a href="#events" class="hover:text-yellow-200">Events</a></li>
-    </ul>
-  </nav>
+<nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 text-white px-4 py-3 md:px-8 md:py-4 flex justify-between items-center shadow-lg">
+  <!-- Logo -->
+  <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide">🐾 MumMum</h1>
+
+  <!-- Hamburger button (mobile only) -->
+  <button id="menu-btn" class="md:hidden text-white focus:outline-none text-2xl">
+    ☰
+  </button>
+
+  <!-- Nav links -->
+  <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 font-semibold mt-3 md:mt-0">
+    <li><a href="#home" class="hover:text-yellow-200">Home</a></li>
+    <li><a href="#gallery" class="hover:text-yellow-200">Gallery</a></li>
+    <li><a href="#contact" class="hover:text-yellow-200">Contact</a></li>
+    <li><a href="#blog" class="hover:text-yellow-200">Blog</a></li>
+    <li><a href="#events" class="hover:text-yellow-200">Events</a></li>
+  </ul>
+</nav>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+
 
   <!-- Hero Section -->
-  <section id="home" class="relative pt-24">
+  <section id="home" class="relative pt-19">
     <img src="images/p1.jpg" alt="Pets Banner" class="w-full h-[500px] object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 flex flex-col items-center justify-center text-center text-white">
       <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Find Your Perfect Pet</h2>
