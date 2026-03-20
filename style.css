@@ -1,0 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+#gallery {
+  background-image: url('images/paw-pattern.png');
+  background-size: 120px;
+  background-repeat: repeat;
+  background-color: #fffaf0; /* warm cream base */
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Pet </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-yellow-50 to-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 text-white p-8 flex justify-between items-center shadow-lg">
+    <h1 class="text-3xl font-extrabold tracking-wide">🐾 MumMum</h1>
+    <ul class="flex space-x-6 font-semibold">
+      <li><a href="#home" class="hover:text-yellow-200">Home</a></li>
+      <li><a href="#gallery" class="hover:text-yellow-200">Gallery</a></li>
+      <li><a href="#contact" class="hover:text-yellow-200">Contact</a></li>
+      <li><a href="#blog" class="hover:text-yellow-200">Blog</a></li>
+      <li><a href="#events" class="hover:text-yellow-200">Events</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative pt-24">
+    <img src="images/p1.jpg" alt="Pets Banner" class="w-full h-[500px] object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 flex flex-col items-center justify-center text-center text-white">
+      <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Find Your Perfect Pet</h2>
+      <p class="mb-6 text-lg">Adopt, love, and care for your furry friends.</p>
+      <a href="#gallery" class="bg-yellow-400 text-black font-semibold py-3 px-8 rounded-full hover:bg-yellow-500 hover:scale-105 transition transform shadow-lg">See Gallery</a>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 px-6 bg-gradient-to-r from-pink-100 via-yellow-50 to-teal-100">
+    <h2 class="text-4xl font-bold text-center mb-6 text-teal-600">Pet Gallery</h2>
+    <p class="text-gray-600 text-center mb-10">Browse our adorable pets waiting for a loving home.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-pink-400">
+        <img src="images/m1.jpg" alt="m1" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-bold text-blue-600">Buddy</h3>
+          <p class="text-gray-600">Friendly Golden Retriever</p>
+        </div>
+      </div>
+
+      <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-pink-400">
+        <img src="images/miley.jpg" alt="miley" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-bold text-pink-600">Whiskers</h3>
+          <p class="text-gray-600">Playful Tabby Cat</p>
+        </div>
+      </div>
+
+      <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-pink-400">
+        <img src="images/m2.jpg" alt="m2" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-bold text-green-600">Sunny</h3>
+          <p class="text-gray-600">Cheerful Parrot</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Adoptio  Section-->
+  <section id="adoption" class="py-24 px-6 bg-gradient-to-r from-pink-100 to-yellow-100">
+  <h2 class="text-4xl font-bold text-center mb-6 text-teal-600">Adoption Process</h2>
+  <div class="max-w-3xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+    <div class="p-6 bg-white rounded-xl shadow-lg">
+      <h3 class="font-bold text-lg">1. Choose a Pet</h3>
+      <p class="text-gray-600">Browse our gallery and find your match.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow-lg">
+      <h3 class="font-bold text-lg">2. Apply</h3>
+      <p class="text-gray-600">Fill out our adoption form online.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow-lg">
+      <h3 class="font-bold text-lg">3. Meet & Adopt</h3>
+      <p class="text-gray-600">Come meet your pet and bring them home.</p>
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <a href="#contact" class="bg-teal-500 text-white py-3 px-6 rounded-full hover:bg-teal-600 transition">Start Adoption</a>
+  </div>
+</section>
+
+  <!--Testimonial-->
+  <section id="testimonials" class="py-24 px-6 bg-gradient-to-r from-yellow-50 to-pink-50">
+  <h2 class="text-4xl font-bold text-center mb-6 text-blue-600">Happy Families</h2>
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="bg-white rounded-xl shadow-lg p-6">
+      <p class="italic text-gray-700">“Adopting Buddy was the best decision we ever made. He brings so much joy to our home!”</p>
+      <h3 class="mt-4 font-bold text-teal-600">— Sarah & Family</h3>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6">
+      <p class="italic text-gray-700">“Whiskers is playful and loving. Thank you Pet Haven for helping us find her!”</p>
+      <h3 class="mt-4 font-bold text-pink-600">— David & Emma</h3>
+    </div>
+  </div>
+  </section>
+
+  <!--Blog section-->
+  <section id="blog" class="py-24 px-6 bg-gradient-to-r from-green-50 via-yellow-50 to-pink-50">
+  <h2 class="text-4xl font-bold text-center mb-6 text-purple-600">Pet Care Tips</h2>
+  <p class="text-gray-600 text-center mb-10">Learn how to keep your pets happy and healthy.</p>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-400">
+      <h3 class="text-xl font-bold text-teal-600 mb-2">Nutrition Guide</h3>
+      <p class="text-gray-600">Discover the best diets for dogs, cats, and birds.</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-400">
+      <h3 class="text-xl font-bold text-pink-600 mb-2">Training Tips</h3>
+      <p class="text-gray-600">Simple tricks to train your pets with love and patience.</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-400">
+      <h3 class="text-xl font-bold text-blue-600 mb-2">Health & Wellness</h3>
+      <p class="text-gray-600">Learn how to spot early signs of illness and keep pets active.</p>
+    </div>
+  </div>
+  </section>
+
+  <!--event section-->
+
+  <section id="events" class="py-24 px-6 bg-gradient-to-r from-teal-50 via-yellow-50 to-orange-50">
+  <h2 class="text-4xl font-bold text-center mb-6 text-teal-600">Upcoming Events</h2>
+  <p class="text-gray-600 text-center mb-10">Join us in our adoption drives and pet fairs.</p>
+
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-teal-400">
+      <h3 class="text-xl font-bold text-orange-600 mb-2">Adoption Drive</h3>
+      <p class="text-gray-600">📅 April 10, 2026 — Visit our shelter and meet pets ready for adoption.</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-teal-400">
+      <h3 class="text-xl font-bold text-pink-600 mb-2">Pet Fair</h3>
+      <p class="text-gray-600">📅 May 5, 2026 — Fun activities, pet care workshops, and more.</p>
+    </div>
+  </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 bg-gradient-to-r from-yellow-100 to-teal-100">
+    <h2 class="text-4xl font-bold text-center mb-6 text-blue-600">Contact Us</h2>
+    <form class="max-w-md mx-auto bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+        <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Enter your name">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+        <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Enter your email">
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+        <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Write your message"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-gradient-to-r from-teal-400 to-blue-500 text-white font-semibold py-3 rounded-full hover:from-teal-500 hover:to-blue-600 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-500 to-teal-400 text-white text-center py-6 mt-12 shadow-inner">
+    <p class="text-sm">&copy; 2026 Pet Haven. All rights reserved.</p>
+    <div class="mt-4 flex justify-center space-x-6 text-lg">
+      <a href="#" class="hover:text-yellow-300">🐶 Facebook</a>
+      <a href="#" class="hover:text-yellow-300">🐱 Instagram</a>
+      <a href="#" class="hover:text-yellow-300">🐦 Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
