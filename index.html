@@ -6,6 +6,9 @@
   <title>Get Pet </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body class="bg-gradient-to-b from-yellow-50 to-white text-gray-800">
 
@@ -22,9 +25,10 @@
   <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 font-semibold mt-3 md:mt-0">
     <li><a href="#home" class="hover:text-yellow-200">Home</a></li>
     <li><a href="#gallery" class="hover:text-yellow-200">Gallery</a></li>
-    <li><a href="#contact" class="hover:text-yellow-200">Contact</a></li>
     <li><a href="#blog" class="hover:text-yellow-200">Blog</a></li>
     <li><a href="#events" class="hover:text-yellow-200">Events</a></li>
+    <li><a href="#contact" class="hover:text-yellow-200">Contact</a></li>
+
   </ul>
 </nav>
 
@@ -82,41 +86,136 @@
   </section>
 
   <!--Adoptio  Section-->
-  <section id="adoption" class="py-24 px-6 bg-gradient-to-r from-pink-100 to-yellow-100">
-  <h2 class="text-4xl font-bold text-center mb-6 text-teal-600">Adoption Process</h2>
-  <div class="max-w-3xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-    <div class="p-6 bg-white rounded-xl shadow-lg">
-      <h3 class="font-bold text-lg">1. Choose a Pet</h3>
-      <p class="text-gray-600">Browse our gallery and find your match.</p>
+  <section id="adoption" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-10">🐾 Adoption Process</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Step 1 -->
+      <div class="p-6 rounded-lg shadow-lg bg-gradient-to-r from-pink-400 to-purple-500 text-white transform transition duration-300 hover:scale-105">
+        <h3 class="text-xl font-bold mb-4">1. Browse Pets</h3>
+        <p>Explore our gallery and meet the pets waiting for a loving home.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="p-6 rounded-lg shadow-lg bg-gradient-to-r from-orange-400 to-pink-500 text-white transform transition duration-300 hover:scale-105">
+        <h3 class="text-xl font-bold mb-4">2. Apply Online</h3>
+        <p>Fill out a quick adoption form to tell us about yourself.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 text-white transform transition duration-300 hover:scale-105">
+        <h3 class="text-xl font-bold mb-4">3. Meet & Adopt</h3>
+        <p>Schedule a visit, meet your furry friend, and bring them home!</p>
+      </div>
+
     </div>
-    <div class="p-6 bg-white rounded-xl shadow-lg">
-      <h3 class="font-bold text-lg">2. Apply</h3>
-      <p class="text-gray-600">Fill out our adoption form online.</p>
-    </div>
-    <div class="p-6 bg-white rounded-xl shadow-lg">
-      <h3 class="font-bold text-lg">3. Meet & Adopt</h3>
-      <p class="text-gray-600">Come meet your pet and bring them home.</p>
-    </div>
+
+    <!-- Adoption Form (NEW) -->
+     <section id="adoption-form" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-extrabold text-center mb-8">Adoption Form</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-6 bg-white p-6 rounded-lg shadow-lg">
+      
+      <!-- Name -->
+      <input type="text" name="name" placeholder="Your Name" 
+             class="w-full border rounded-lg p-3" required>
+      
+      <!-- Email -->
+      <input type="email" name="email" placeholder="Your Email" 
+             class="w-full border rounded-lg p-3" required>
+      
+      <!-- Pet Choice -->
+      <input type="text" name="pet" placeholder="Pet You Want to Adopt" 
+             class="w-full border rounded-lg p-3">
+      
+      <!-- Message -->
+      <textarea name="message" placeholder="Tell us why you'd love to adopt" 
+                class="w-full border rounded-lg p-3"></textarea>
+      
+      <!-- Submit Button -->
+      <button type="submit" 
+              class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:opacity-90 transition">
+        Submit Adoption Request
+      </button>
+    </form>
   </div>
-  <div class="text-center mt-8">
-    <a href="#contact" class="bg-teal-500 text-white py-3 px-6 rounded-full hover:bg-teal-600 transition">Start Adoption</a>
-  </div>
-</section>
+  </section>
+
+  <!--Call to action-->
+  <a href="#adoption-form" 
+   class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+   Start Adoption Today
+  </a>
+
+
 
   <!--Testimonial-->
-  <section id="testimonials" class="py-24 px-6 bg-gradient-to-r from-yellow-50 to-pink-50">
-  <h2 class="text-4xl font-bold text-center mb-6 text-blue-600">Happy Families</h2>
-  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-    <div class="bg-white rounded-xl shadow-lg p-6">
-      <p class="italic text-gray-700">“Adopting Buddy was the best decision we ever made. He brings so much joy to our home!”</p>
-      <h3 class="mt-4 font-bold text-teal-600">— Sarah & Family</h3>
+  <section id="families" class="bg-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">🐾 Happy Families</h2>
+
+    <!-- Swiper container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-pink-400">
+            <img src="images/p11.jpg" alt="Family 1" class="w-full h-56 object-cover">
+            <div class="p-4 text-center">
+            <p class="font-semibold text-gray-700">“Bella has brought so much joy to our home!”</p>
+          </div>
+        </div>
     </div>
-    <div class="bg-white rounded-xl shadow-lg p-6">
-      <p class="italic text-gray-700">“Whiskers is playful and loving. Thank you Pet Haven for helping us find her!”</p>
-      <h3 class="mt-4 font-bold text-pink-600">— David & Emma</h3>
+
+
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-pink-400">
+            <img src="images/p12.jpg" alt="Family 1" class="w-full h-56 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-semibold text-gray-700">“Bella has brought so much joy to our home!”</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Add more slides as needed -->
+        
+      </div>
+
+      <!-- Pagination & navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
   </section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,              // keeps sliding infinitely
+    autoplay: {
+      delay: 3000,           // 3 seconds per slide
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  </script>
+
+
 
   <!--Blog section-->
   <section id="blog" class="py-24 px-6 bg-gradient-to-r from-green-50 via-yellow-50 to-pink-50">
@@ -163,15 +262,15 @@
     <h2 class="text-4xl font-bold text-center mb-6 text-blue-600">Contact Us</h2>
     <form class="max-w-md mx-auto bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg">
       <div class="mb-4">
-        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+        <label for="name" class="block text-gray-700 font-medium mb-2"><b>Name</b></label>
         <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Enter your name">
       </div>
       <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+        <label for="email" class="block text-gray-700 font-medium mb-2"><b>Email</b></label>
         <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Enter your email">
       </div>
       <div class="mb-4">
-        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+        <label for="message" class="block text-gray-700 font-medium mb-2"><b>Message</b></label>
         <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Write your message"></textarea>
       </div>
       <button type="submit" class="w-full bg-gradient-to-r from-teal-400 to-blue-500 text-white font-semibold py-3 rounded-full hover:from-teal-500 hover:to-blue-600 transition">Send Message</button>
@@ -189,5 +288,6 @@
   </footer>
 
   <script src="script.js"></script>
+  
 </body>
 </html>
